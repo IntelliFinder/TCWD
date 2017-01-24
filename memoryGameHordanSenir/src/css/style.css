@@ -1,0 +1,28 @@
+footer { 
+    background: linear-gradient(red, yellow);
+        text-align: center;
+
+}
+div {
+    display: inline-block;
+}
+h1 {
+    font-family: "Times New Roman",  sans-serif;
+    size: 36px;
+    text-align: center;
+    background-color: red !important;
+}
+img{
+    margin: 14px;
+    padding: 14px;
+}
+hr{
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red !important;
+} 
