@@ -1,0 +1,9 @@
+video, audio, figure{
+    background-color: #ffff00; 
+    display: inline-flex;
+    margin: 15px;
+    padding: 10px;
+    }
+figure :hover{
+    background-color: cyan;
+}

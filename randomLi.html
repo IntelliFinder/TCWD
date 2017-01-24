@@ -1,0 +1,35 @@
+<p style="line-height: 18px; font-size: 18px;  font-family: times;">
+Click "<i>Load samples</i>" to view and edit more JS samples.<br>
+<br>
+Labyrinth generated with JavaScript:<br><br>
+<script>
+var posts = [{ id: 3, title: 'Hello World', content: 'Welcome to learning React!' }, { id: 2, title: 'Installation', content: 'You can install React from npm.' }, { id: 3, title: 'Upgrade', content: 'You can install React from npm.' }];
+
+var array = [],
+	i=0,
+    j=0,
+    c=0;
+
+var content = posts.map(function (post) {
+  array.push(post.title);
+});
+
+while (i<3){
+	j=Math.floor((Math.random()*3));
+    document.writeln(array[j]);
+      document.writeln("<br>");
+
+    i++;
+}
+  document.writeln("<br>");
+
+while (c<3) {
+    document.writeln(array[c]);
+    c++;
+}
+
+var img=[{src: "./img/chicken", rel: "chicken"},"./img/chiwawa", "./img/dog", "./img/dog", "./img/hamster" ];
+
+function(){
+	<img src="props.img.src" rel="props.img.rel">
+}

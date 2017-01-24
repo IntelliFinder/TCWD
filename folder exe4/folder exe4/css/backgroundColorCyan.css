@@ -1,0 +1,4 @@
+video, audio, figure{
+    background-color: cyan; 
+    display: inline-block;
+}
