@@ -1,0 +1,40 @@
+class Toggle extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
+  render() {
+    return (
+      <div>
+      <img  className= {this.state.isToggleOn ? 'YES' : 'NO'}
+       src= "http://placehold.it/350x150"
+        alt= "whatever"
+        height="150"
+        width="150" />
+         <img  className= {this.state.isToggleOn ? 'ON' : 'OFF'}
+       src= "http://www.w3schools.com/images/w3schools_green.jpg"
+        alt= "whatever"
+        height="150"
+        width="150" />
+      <button id='this' onClick={this.handleClick} className= {this.state.isToggleOn ? 'ON' : 'OFF'}>
+        {this.state.isToggleOn ? 'ON' : 'OFF'}
+      </button>
+      </div>
+    );
+  }
+}
+ReactDOM.render(
+  <Toggle />,
+  document.getElementById('root')
+);
+
